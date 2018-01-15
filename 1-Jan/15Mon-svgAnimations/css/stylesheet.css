@@ -1,0 +1,33 @@
+body{
+	background-color: lightblue;
+}
+
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+#canvas{
+	width: 600px;
+	height: 600px;
+	border: 5px solid white;
+}
+
+#canvas2{
+	height: 600px;
+	width: 600px;
+	border: 5px dotted white;
+}
+
+#box{
+	width: 600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container{
+	width: 100vw;
+	height:auto;
+}

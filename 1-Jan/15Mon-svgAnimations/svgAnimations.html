@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>svg animation</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+	<h1>SVG Intro</h1>
+
+	<div id="box">
+		<svg id="canvas">
+		<!-- the svg needs an id of canvas and a closing tag -->
+			<rect width="400" height="400" fill="white" x="100" y="100"/>
+			<!-- rectangle (most els withen an svg el dont need closing tags, they are placed on the dom in order that they appear on here.)-->
+
+			<circle cx="300" cy="300" r="200" fill="lightblue"/>
+			<!-- cirlce cx = center x, cy = center y, a cirlce needs a radius (r="") -->
+
+			<ellipse cx="150" cy="150" rx="100" ry="50" fill="red"/>
+
+			<line x1="10" y1="10" x2="100" y2="300" style="stroke:black;stroke-width:4"/>
+
+			<polygon points="600,300 600,200 50,25" fill="purple"/>
+
+			<polyline points="10,30 200,400, 80,150 400,400" style="fill:none;stroke:green;stroke-width:4;"/>
+
+			<text x="300" y="400">This is some text</text>
+			<!-- the text el withen an svg needs a closing tag -->
+		</svg>
+	</div>
+
+	<h1>character building</h1>
+
+	<div id="box">
+		<svg id="canvas2">
+
+			<ellipse cx="300" cy="300" rx="170" ry="180" style="fill:none;stroke:black;stroke-width:4;"/>
+
+			<ellipse cx="315" cy="300" rx="185" ry="180" style="fill:none;stroke:black;stroke-width:4;"/>
+
+			<circle cx="205" cy="305" r="15" style="fill:none;stroke:black;stroke-width:3;"/>
+			<circle cx="365" cy="305" r="15" style="fill:none;stroke:black;stroke-width:3;"/>
+			<line x1="250" y1="325" x2="315" y2="325" style="stroke:black;stroke-width:4"/>
+			<polyline points="450,385 150,385" style="fill:none;stroke:black;stroke-width:4;"/>
+			<polyline points="265,385 266,415 267,420 268,425 270,430 275,440 285,450 285,440 285,430 290,415 295,400" style="fill:none;stroke:black;stroke-width:4;"/>
+			<circle cx="300" cy="385" r="15" style="fill:white;stroke:black;stroke-width:3;"/>
+			<circle cx="265" cy="385" r="15" style="fill:white;stroke:black;stroke-width:3;"/>
+			<circle cx="280" cy="385" r="10" style="fill:white;stroke:black;stroke-width:3;"/>
+			<ellipse cx="277" cy="425" rx="2" ry="6" style="fill:none;stroke:black;stroke-width:4;"/>
+			<path d="M10 100 C 50 150, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent"/>
+
+
+
+
+
+		</svg>
+	</div>
+
+</div><!-- container ends -->
+
+
+
+
+</body>
+</html>
