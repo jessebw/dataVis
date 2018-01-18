@@ -1,0 +1,12 @@
+h1{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+#chartLocation{
+	width: 1000px;
+	height: 600px;
+	background-color: lightblue;
+	margin: 0 auto;
+}
