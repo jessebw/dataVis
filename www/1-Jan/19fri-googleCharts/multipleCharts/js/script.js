@@ -1,4 +1,4 @@
-google.charts.load('current', {packages: ['corechart', 'controls' , 'geochart']});
+google.charts.load('current', {packages: ['corechart', 'controls']});
 google.charts.setOnLoadCallback(drawDashboard);
 
 function drawDashboard(){
@@ -85,17 +85,17 @@ function drawDashboard(){
 				containerId: 'tableChart'
 			});
 
-			var sankeyChart = new google.visualization.ChartWrapper({
-				chartType: 'GeoChart',
-				containerId: 'chart3',
-				options: {
-					columns: [1, ,2, 3]
+			// var sankeyChart = new google.visualization.ChartWrapper({
+			// 	chartType: 'GeoChart',
+			// 	containerId: 'chart3',
+			// 	options: {
+			// 		columns: [1, ,2, 3]
 
-				}
+			// 	}
 
-			});
+			// });
 
-			dashboard.bind([incomeRangeSlider, optionPicker], [scatterChart, tableChart, sankeyChart]);
+			dashboard.bind([incomeRangeSlider, optionPicker], [scatterChart, tableChart]);
 			dashboard.draw(data);
 
 			

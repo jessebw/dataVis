@@ -4,7 +4,7 @@ student server address:
 	WE
 	17WDWU07
 
-
+---------------------------------------------------------------------
 
 on mac download:
 
@@ -42,6 +42,7 @@ vagrant
 
  	vagrant distroy (server id name here with no brakets)
 
+---------------------------------------------------------------------
 
 virtual box - (creates a virtual computer)
 
@@ -54,4 +55,75 @@ data visualisation:
 		skatter
 		stepped area
 		table
+
+---------------------------------------------------------------------
+
+
+
+Grunt (grunt is similar to gulp - it is a task manager.)
+To install grunt first we have to install node onto the server.
+(While its installed on the computer, each virtual server you make will need to have it installed.)
+
+In vagrant while its up
+
+type: 
+
+vagrant ssh
+
+then: 
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
+then: nvm --version
+
+and it should show the version.
+
+then type: 
+
+nvm install node
+
+type: exit
+(this will close the server which will reset and add node)
+
+type: vagrant ssh
+type: nvm install node
+
+then cd to the directory the site is in eg. argo 
+
+type: npm init
+
+It will ask for a package name: type name of package.
+version: press enter
+descripttion: descrption of site
+entry point: index.html
+etc...
+keywords: site keywords
+author: jesse
+licence: press enter
+is this ok?: type yes
+
+Now there should be a node_modlues folder inside of the project directory. From the npm website we can get the 
+instructions to install things like jquer, sass gulp.
+Once the package.JSON file is created any further librarys should be installed by typeing for example:
+
+npm install bootstrap --save
+
+(the --save will save it to the package.json file).
+
+Note: 
+So that git doesnt upload this file everytime, (because it may get large) you must create a file call .gitignore
+and inside type node_modules and leave that file inside the project directory.
+
+Note: npm update
+will update any old versions of a package you might have, any old versions.
+
+
+
+
+
+
+
+
+
+
 
